@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeActivity">
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to My App"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="120dp"/>
+    <ImageView
+        android:id="@+id/img_relative"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/txt_welcome"
+        android:padding="16dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center_horizontal|top"
+        android:src="@drawable/img" />
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_relative"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:hint="Enter Your Name"/>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="22dp"
+        android:text="Sumbit" />
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="361dp"
+        android:layout_toEndOf="@id/btn_submit"
+        android:text="Cancel" />
+</RelativeLayout>
